@@ -20,6 +20,9 @@ body {
   margin: 0;
   font-size: 17.5px;
 }
+.combo-box-submenu {
+  display: none;
+}
 .combo-box-submenu-item {
   height: 60px;
   background-color: #1f7f5c;
@@ -44,18 +47,20 @@ body {
   margin: 20px;
   font-size: 20px;
 }
-.combo-box-divider {
+.combo-box-right-btn {
   width: 60px;
   height: 60px;
   position: relative;
   margin-left: 265px;
   border-left: 1px solid #ebe7df;
 }
-.combo-box-divider:hover {
+.combo-box-right-btn:hover,
+.combo-box-right-btn:visited {
   border-left: 0;
   background-color: #1f7f5c;
 }
-.combo-box-divider:hover [class^="icon-"] {
+.combo-box-right-btn:hover [class^="icon-"],
+.combo-box-right-btn:visited [class^="icon-"] {
   color: #fff;
 }
 .button-enabled {
