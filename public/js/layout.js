@@ -4,7 +4,7 @@
   $('[data-toggle=dropdown]').on('click', function (e){ 
     var $current = $(e.currentTarget);
     $current.toggleClass('button-enabled');
-    $current.prev().find('[data-role=combo-submenu]').toggle();
+    $current.parent().find('[data-role=combo-submenu]').toggle();
   });
 
 }(jQuery));

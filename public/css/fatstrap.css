@@ -4,28 +4,69 @@ body {
   color: #000000;
   background-color: #ebe7df;
 }
-.dark {
-  background-color: #232323;
-}
-.light {
-  background-color: #ffffff;
-}
-.combo-box {
+.global-box {
   width: 325px;
   height: 60px;
-  position: absolute;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
-.combo-box p {
-  padding: 20px;
+.global-box p {
+  padding: 19px;
   margin: 0;
   font-size: 17.5px;
+}
+.global-box.two-btns p {
+  margin-left: 60px;
+}
+[class^="global-box"] [class^="icon-"]:before {
+  margin: 20px;
+  font-size: 20px;
+}
+.global-box-btn-container {
+  position: absolute;
+}
+.global-box-btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: -1px;
+}
+.global-box-btn.left {
+  border-left: O;
+  border-right: 1px solid #ebe7df;
+}
+.global-box-btn.right {
+  left: 265px;
+  border-left: 1px solid #ebe7df;
+}
+.global-box-btn:hover {
+  border-left: 0;
+  border-right: 0;
+  background-color: #1f7f5c;
+}
+.global-box-btn:hover [class^="icon-"] {
+  color: #fff;
+}
+.button-enabled {
+  border-left: 0;
+  border-right: 0;
+  background-color: #1f7f5c;
+}
+.button-enabled [class^="icon-"] {
+  color: #fff;
 }
 .combo-box-submenu {
   display: none;
 }
 .combo-box-submenu-item {
   height: 60px;
+  width: 326px;
   background-color: #1f7f5c;
+  margin-left: -1px;
 }
 .combo-box-submenu-item:not(.last) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -41,33 +82,6 @@ body {
 }
 .combo-box-submenu-item span.submenu-title {
   font-size: 16px;
-  color: #fff;
-}
-[class^="combo-box"] [class^="icon-"]:before {
-  margin: 20px;
-  font-size: 20px;
-}
-.combo-box-right-btn {
-  width: 60px;
-  height: 60px;
-  position: relative;
-  margin-left: 265px;
-  border-left: 1px solid #ebe7df;
-}
-.combo-box-right-btn:hover,
-.combo-box-right-btn:visited {
-  border-left: 0;
-  background-color: #1f7f5c;
-}
-.combo-box-right-btn:hover [class^="icon-"],
-.combo-box-right-btn:visited [class^="icon-"] {
-  color: #fff;
-}
-.button-enabled {
-  border-left: 0;
-  background-color: #1f7f5c;
-}
-.button-enabled [class^="icon-"] {
   color: #fff;
 }
 @font-face {
@@ -141,3 +155,6 @@ body {
   content: '\1f3a7';
 }
 /* '\1f3a7' */
+.icon-search:before {
+  content: '\1f50d';
+}

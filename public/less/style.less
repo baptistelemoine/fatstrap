@@ -1,3 +1,15 @@
+body{
+	font-family: @font-family-montserrat;
+	font-size: @font-size-base;
+	color: @text-color;
+	background-color: @background-color-base;
+	.body-bg(@theme);
+}
+
+.body-bg(@theme) when (@theme = dark){
+	background-color: @dark;
+}
+
 .opacity(@opacity: 0.5) {
   -moz-opacity: @opacity;
   -khtml-opacity: @opacity;
