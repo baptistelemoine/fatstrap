@@ -1,0 +1,58 @@
+
+//todo : fix label vertical alignment for big one;
+
+input[type="checkbox"]{
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.regular-checkbox{
+	-webkit-appearance: none;
+    -moz-appearance:none;
+    padding: 9px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 0px;
+    &:checked{
+    	background-color: @green;
+    }
+    &:checked:after{
+    	font-family: @font-family-fontello;
+    	font-size: 10px;
+    	content: '\2713';
+    	position: absolute;
+    	top: 4px;
+    	left: 5px;
+    	color: #fff;
+    }
+    .regular-checkbox-theme(@theme);
+}
+
+.regular-checkbox-theme(dark){
+	background-color: @dark;
+	// color:#fff;
+	border: 1px solid rgba(255, 255, 255, .05);
+}
+
+.regular-checkbox-theme(light){
+	background-color: @light;
+	border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.big-checkbox {
+    padding: 18px;
+}
+ 
+.big-checkbox:checked:after {
+    font-size: 18px;
+    left: 11px;
+    top: 9px;
+}
+
+label.checkbox{
+    color: @dark;
+    .label-color(@theme);
+}
+
+.label-color(@theme) when (@theme = dark) { color: #fff; }
+
