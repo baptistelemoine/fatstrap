@@ -1,0 +1,47 @@
+
+ul.list{
+	margin: 0;
+}
+
+ul.list li {
+	color: #fff;
+	padding: 15px 0 15px;
+	&:not(:last-child){
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	}
+	p.subtitle{
+		font-size: @font-size-small;
+		.opacity(0.5);
+	}
+	&.icon-list{
+		padding: 10px 0 0;
+	}
+	span[class^="icon-angle"]{
+		float: right;
+		margin-top: 5px;
+		font-size: 24px;
+		.opacity(0.1);	
+	}
+	div:first-child {
+		position: absolute;
+		span[class^="icon"]{
+			font-size: 36px;
+			color:@green;
+			&:before{
+				background-color: #fff;
+				border-radius: 30px;
+			}
+		}
+	}
+	div:last-child {
+		margin-left: 60px;
+	}
+}
+
+ul.list span.badge{
+	border-radius: 0;
+	margin-left: 15px;
+	background-color: @green;
+	float: right;
+	padding: 4px 6px;
+}

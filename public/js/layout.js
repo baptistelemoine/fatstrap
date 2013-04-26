@@ -10,7 +10,7 @@
   //stop hover btn effect
   $('[data-toggle=dropdown]').hover(
 	function (e){
-		if($(this).hasClass('button-enabled')) $(this).css('border', 0);
+		//if($(this).hasClass('button-enabled')) $(this).css('border', 0);
 	}
   );
 

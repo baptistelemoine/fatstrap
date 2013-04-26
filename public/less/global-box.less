@@ -36,7 +36,11 @@
 	[class^="icon-"]:before{
 		margin: 20px;
 		font-size: 20px;
-	}	
+	}
+	[class^="icon-angle"]:before{
+		margin:15px;	
+		font-size: 28px;
+	}
 }
 
 .global-box-btn-container{
@@ -47,9 +51,9 @@
 	width: @global-box-height;
 	height: @global-box-height;
 	position: absolute;
-	left: 0;
+	// left: 0;
 	bottom: 0;
-	top: -1px;	
+	// top: -1px;
 	[class^="icon-"]{
 		.global-icon-color(@theme);
 	}
@@ -59,9 +63,9 @@
 		.global-icon-border-color(@theme);
 	}
 	&.right{
-		left: @global-box-width - @global-box-height;
+		right:0;
 		border-left:1px solid @background-color-base;
-		.global-icon-border-color(@theme);
+		.global-icon-border-color(@theme);		
 	}
 	&:hover{
 		.button-enabled;

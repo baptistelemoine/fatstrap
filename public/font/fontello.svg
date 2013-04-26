@@ -2,12 +2,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20110222 at Thu Apr 25 13:34:37 2013
+Created by FontForge 20110222 at Fri Apr 26 13:44:00 2013
  By root
 Copyright (C) 2012 by original authors @ fontello.com
 </metadata>
 <defs>
-<font id="fontello" horiz-adv-x="887" >
+<font id="fontello" horiz-adv-x="1000" >
   <font-face 
     font-family="fontello"
     font-weight="500"
@@ -16,7 +16,7 @@ Copyright (C) 2012 by original authors @ fontello.com
     panose-1="2 0 6 3 0 0 0 0 0 0"
     ascent="850"
     descent="-150"
-    bbox="15 -43 1086 779"
+    bbox="0 -150 1086 850"
     underline-thickness="50"
     underline-position="-100"
     unicode-range="U+2713-1F50D"
@@ -31,7 +31,14 @@ d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
  />
     <glyph glyph-name="uni2713" unicode="&#x2713;" horiz-adv-x="895" 
 d="M15 332q0 22 16 38l76 76q16 16 37 16q22 0 38 -16l164 -165l367 367q16 16 37 16q22 0 38 -16l76 -76q16 -16 16 -38t-16 -38l-480 -480q-15 -15 -38 -15q-22 0 -37 15l-278 278q-16 16 -16 38z" />
-    <glyph glyph-name="uniF0C9" unicode="&#xf0c9;" 
+    <glyph glyph-name="uniE007" unicode="&#xe007;" 
+d="M146 704q146 146 354 146t354 -146t146 -354t-146 -354t-354 -146t-354 146t-146 354t146 354zM766 102v496h-532v-496h532zM301 534h400v-368h-400v368zM432 207v88h-88v-88h88zM656 325v162h-312v-162h312zM543 207v88h-88v-88h88zM566 207h90v88h-90v-88z" />
+    <glyph glyph-name="uniE077" unicode="&#xe077;" 
+d="M146 704q146 146 354 146t354 -146t146 -354t-146 -354t-354 -146t-354 146t-146 354t146 354zM559 129q90 17 158 78v184h-43v-162q-76 -63 -174 -63t-174 63v162h-43v-184q19 -17 43 -31q54 -35 115 -47v22h118v-22zM500 213q81 0 146 53v357q-24 19 -44 28v-72h-36v87
+q-27 7 -48 8v-95h-36v95q-22 0 -48 -8v-87h-36v74q-16 -8 -44 -30v-357q65 -53 146 -53zM369 26h262v43h-72v60q-30 -6 -59 -6t-59 6v-60h-72v-43z" />
+    <glyph glyph-name="uniE0F7" unicode="&#xe0f7;" 
+d="M146 704q146 146 354 146t354 -146t146 -354t-146 -354t-354 -146t-354 146t-146 354t146 354zM500 256q-42 0 -73 30.5t-31 71.5h-197v-289h602v289h-197q0 -41 -31 -71.5t-73 -30.5zM367 530l133 -200l133 200h-72v140h-122v-140h-72z" />
+    <glyph glyph-name="uniF0C9" unicode="&#xf0c9;" horiz-adv-x="887" 
 d="M51 -7q-14 0 -25 11t-11 25v71q0 14 11 25t25 11h785q14 0 25 -11t11 -25v-71q0 -14 -11 -25t-25 -11h-785zM51 279q-14 0 -25 10.5t-11 24.5v72q0 14 11 24.5t25 10.5h785q14 0 25 -10.5t11 -24.5v-72q0 -14 -11 -24.5t-25 -10.5h-785zM15 600v71q0 14 11 25t25 11h785
 q14 0 25 -11t11 -25v-71q0 -14 -11 -25t-25 -11h-785q-14 0 -25 11t-11 25z" />
     <glyph glyph-name="uniF0DC" unicode="&#xf0dc;" horiz-adv-x="601" 
@@ -39,7 +46,11 @@ d="M15 243q0 14 11 25t25 11h500q14 0 24.5 -11t10.5 -25q0 -15 -10 -25l-250 -250q-
     <glyph glyph-name="uniF0ED" unicode="&#xf0ed;" horiz-adv-x="1101" 
 d="M15 243q0 76 41 136.5t103 89.5q-1 11 -1 24q0 118 84 202t202 84q92 0 162.5 -51t101.5 -127q40 35 93 35q59 0 101 -42t42 -101q0 -42 -23 -77q69 -16 117 -74t48 -135q0 -89 -62 -151q-63 -63 -152 -63h-607q-104 0 -177 73t-73 177zM301 332q0 -8 5 -13l196 -196
 q5 -5 13 -5t13 5l196 196q5 5 5 13t-5.5 13t-12.5 5h-125v196q0 18 -17 18h-108q-17 0 -17 -18v-196h-125q-7 0 -12.5 -5t-5.5 -13z" />
-    <glyph glyph-name="u1F381" unicode="&#x1f381;" 
+    <glyph glyph-name="uniF104" unicode="&#xf104;" horiz-adv-x="355" 
+d="M15 314q0 7 6 13l260 260q6 6 12 6q7 0 13 -6l28 -28q6 -6 6 -13q0 -6 -6 -12l-219 -220l219 -219q6 -6 6 -13t-6 -13l-28 -28q-5 -5 -13 -5q-7 0 -12 5l-260 260q-6 6 -6 13z" />
+    <glyph glyph-name="uniF105" unicode="&#xf105;" horiz-adv-x="355" 
+d="M15 82q0 7 6 13l219 219l-219 220q-6 6 -6 12q0 7 6 13l27 28q6 6 13 6t13 -6l260 -260q6 -6 6 -13t-6 -13l-260 -260q-5 -5 -13 -5t-13 5l-27 28q-6 6 -6 13z" />
+    <glyph glyph-name="u1F381" unicode="&#x1f381;" horiz-adv-x="887" 
 d="M54 277q-39 0 -39 19v179q0 7 5.5 12.5t12.5 5.5h245q-52 0 -88.5 36.5t-36.5 88.5t36.5 88.5t88.5 36.5q61 0 94 -43l72 -92l71 92q33 43 94 43q52 0 88.5 -36.5t36.5 -88.5t-36.5 -88.5t-88.5 -36.5h245q8 0 13 -5.5t5 -12.5v-179q0 -19 -38 -19q-4 0 -17 1t-16 1v-233
 q0 -22 -15.5 -37.5t-38.5 -15.5h-607q-23 0 -38.5 15.5t-15.5 37.5v233q-3 0 -15.5 -1t-16.5 -1zM225 618q0 -23 15.5 -38.5t37.5 -15.5h109l-70 90q-13 17 -39 17q-22 0 -37.5 -15.5t-15.5 -37.5zM354 93q0 -14 10.5 -21.5t25.5 -7.5h107q15 0 25.5 7.5t10.5 21.5v400h-179
 v-400zM500 564h109q22 0 37.5 15.5t15.5 38.5q0 22 -15 37.5t-38 15.5q-26 0 -39 -17z" />

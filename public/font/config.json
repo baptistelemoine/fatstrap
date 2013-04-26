@@ -20,6 +20,42 @@
     },
     {
       "search": [
+        "website"
+      ],
+      "code": 57351,
+      "uid": "a7dac3a6d7b1fdf3a67a9f2530afaaed",
+      "css": "website-circled",
+      "orig_css": "website-circled",
+      "orig_code": 57351,
+      "src": "elusive",
+      "from": 57351
+    },
+    {
+      "search": [
+        "mic"
+      ],
+      "code": 57463,
+      "uid": "4d2f54ceffd4645d3ce6fe82b404190d",
+      "css": "mic-circled",
+      "orig_css": "mic-circled",
+      "orig_code": 57463,
+      "src": "elusive",
+      "from": 57463
+    },
+    {
+      "search": [
+        "inbox"
+      ],
+      "code": 57591,
+      "uid": "79b6617cefe785018f0354965c73f87d",
+      "css": "inbox-circled",
+      "orig_css": "inbox-circled",
+      "orig_code": 57591,
+      "src": "elusive",
+      "from": 57591
+    },
+    {
+      "search": [
         "menu"
       ],
       "code": 61641,
@@ -54,6 +90,29 @@
       "orig_code": 61677,
       "src": "fontawesome",
       "from": 61677
+    },
+    {
+      "search": [],
+      "code": 61700,
+      "uid": "f3f90c8c89795da30f7444634476ea4f",
+      "css": "angle-left",
+      "orig_css": "angle-left",
+      "orig_code": 61700,
+      "src": "fontawesome",
+      "from": 61700
+    },
+    {
+      "search": [
+        "angle",
+        "right"
+      ],
+      "code": 61701,
+      "uid": "7bf14281af5633a597f85b061ef1cfb9",
+      "css": "angle-right",
+      "orig_css": "angle-right",
+      "orig_code": 61701,
+      "src": "fontawesome",
+      "from": 61701
     },
     {
       "search": [

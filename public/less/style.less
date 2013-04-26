@@ -6,6 +6,8 @@ body{
 	.body-bg(@theme);
 }
 
+ul, li { list-style: none;}
+
 .body-bg(@theme) when (@theme = dark){
 	background-color: @dark;
 }
@@ -18,4 +20,12 @@ body{
   @opperc: @opacity * 100;
   -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
   filter: ~"alpha(opacity=@{opperc})";
+}
+
+.blue{
+  color:@blue !important;
+}
+
+.bg-blue{
+  background-color: @blue;
 }
