@@ -56,6 +56,43 @@
     },
     {
       "search": [
+        "eye",
+        "subscribe"
+      ],
+      "code": 59146,
+      "from": 59146,
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
+      "orig_css": "eye",
+      "orig_code": 59146,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "twitter"
+      ],
+      "code": 61593,
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "orig_css": "twitter",
+      "orig_code": 61593,
+      "src": "fontawesome",
+      "from": 61593
+    },
+    {
+      "search": [
+        "facebook"
+      ],
+      "code": 61594,
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "orig_css": "facebook",
+      "orig_code": 61594,
+      "src": "fontawesome",
+      "from": 61594
+    },
+    {
+      "search": [
         "menu"
       ],
       "code": 61641,
@@ -80,6 +117,21 @@
     },
     {
       "search": [
+        "exchange",
+        "swap",
+        "switch",
+        "arrows"
+      ],
+      "code": 61676,
+      "uid": "6020aff067fc3c119cdd75daa5249220",
+      "css": "exchange",
+      "orig_css": "exchange",
+      "orig_code": 61676,
+      "src": "fontawesome",
+      "from": 61676
+    },
+    {
+      "search": [
         "download",
         "cloud"
       ],
@@ -90,6 +142,19 @@
       "orig_code": 61677,
       "src": "fontawesome",
       "from": 61677
+    },
+    {
+      "search": [
+        "doc",
+        "article"
+      ],
+      "code": 61686,
+      "uid": "5408be43f7c42bccee419c6be53fdef5",
+      "css": "doc-alt",
+      "orig_css": "doc-alt",
+      "orig_code": 61686,
+      "src": "fontawesome",
+      "from": 61686
     },
     {
       "search": [],
@@ -155,6 +220,19 @@
       "orig_css": "search",
       "orig_code": 128269,
       "src": "modernpics"
+    },
+    {
+      "search": [
+        "clock",
+        "time"
+      ],
+      "code": 128340,
+      "from": 128340,
+      "uid": "598a5f2bcf3521d1615de8e1881ccd17",
+      "css": "clock",
+      "orig_css": "clock",
+      "orig_code": 128340,
+      "src": "fontawesome"
     }
   ]
 }

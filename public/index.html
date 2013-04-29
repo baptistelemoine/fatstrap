@@ -1,148 +1,203 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square UI css</title>    
+    <title>Square UI css</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/fatstrap.css">    
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
   </head>
   
   <body>
-    <!-- HEADER TWO BUTTONS -->
-    <div style="margin:50px;background-color:#ece8e1; height:200px; padding:10px">
-      <div class="header global-box title-center">
-        <p>One btn box</p>
-        <div class="global-box-btn right">
-          <span class="icon-menu"></span>
+    <div id="wrapper">
+      
+      <div id="main">
+        <!-- HEADER TWO BUTTONS -->
+        <div class="navbar navbar-fixed-top">
+          <div class="header global-box title-center">
+            <p>Accueil</p>
+            <div class="global-box-btn right">
+              <span class="icon-menu"></span>
+            </div>
+            <div id="btn-menu" class="global-box-btn left">
+              <span class="icon-angle-left"></span>
+            </div>
+          </div>
         </div>
-        <div class="global-box-btn left">
-          <span class="icon-angle-left"></span>
+        <!-- END -->
+
+        <div id="content-container">
+
+          <!-- CONTENT BOX ARTICLE -->
+            <div class="content-box article">
+              <div class="left-nav">
+                <div class="button square sticky bg-blue"><span class="icon-doc-alt" /></div>
+                <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
+              </div>        
+              <div class="content-box-header">
+                <span>Dossier : L'agriculteur, acteur économique</span><span class="badge">234</span>
+              </div>
+              <div class="title-container">
+                <p>L'avis du CESE sur la gestion de l'eau en agriculture est voté dans la discorde</p>
+              </div>
+              <img src="images/test2.png" />
+              <div class="summary-container">
+                <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
+              </div>
+              <div class="content-box-footer">
+                <span class="icon-clock"></span><span>il y a 4 jours</span>
+              </div> 
+            </div>
+          <!-- END -->
+          <hr />
+          <!-- CONTENT BOX ARTICLE -->
+          <div class="content-box">
+            <div class="left-nav">
+              <div class="button square sticky bg-purple"><span class="icon-eye" /></div>
+              <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
+            </div>        
+            <div class="content-box-header">
+              <span>Les offres d'emploi du réseau</span><span class="badge">34</span>
+            </div>
+            <div class="title-container">
+              <p>La FRSEA Rhône-Alpes recrute sont directeur (H/F)</p>
+            </div>
+            <div class="summary-container">
+              <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
+            </div>
+            <div class="content-box-footer">
+              <span class="icon-clock"></span><span>il y a 4 jours</span>
+            </div>          
+          </div>
+        <!-- END -->
+        <hr />
+        <!-- LIST WITH ICON AND ARROW -->
+          <ul class="list background-enabled">
+            <li class="icon-list">
+              <div>
+                <span class="icon-website-circled blue"></span>
+              </div>
+              <div>
+                Designmodo
+                <span class="icon-angle-right"></span>       
+                <p class="subtitle">this is a short summary</p>
+              </div>          
+            </li>
+            <li class="icon-list">
+              <div>
+                <span class="icon-inbox-circled"></span>
+              </div>
+              <div>
+                Designmodo
+                <span class="icon-angle-right"></span>       
+                <p class="subtitle">dewcribe what we do</p>
+              </div>          
+            </li>
+          </ul>
+        <!-- END -->
+        <hr />
+        <!-- LIST WITH BADGE-->
+          <ul class="list">
+            <li>Designmodo<span class="badge">230<span></li>
+            <li>Design legion<span class="badge">115<span></li>
+            <li>Smashing mag<span class="badge">26<span></li>
+            <li>CSS liars<span class="badge">97<span></li>
+          </ul>
+        <!-- END -->
+        <hr />
+        <!-- CHECKBOX -->
+        <div style="margin:50px">
+          <label class="checkbox inline">
+            <input type="checkbox" class="regular-checkbox big-checkbox" checked value="option1"> 
+            Ma checkbox
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" class="regular-checkbox" checked value="option1"> 
+            Ma checkbox
+          </label>
         </div>
+        <!-- END CHECKBOX -->
+        <hr />
+        <!-- RADIO BUTTON LIST -->
+        
+          <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked />
+          <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" />
+          <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio" />
+        
+        <!-- END RADIO BTN LIST-->
+        <hr />
+        <!-- COMBO BOX -->
+        
+          <div class="global-box">
+            <p>Combo box</p>
+            <div class="combo-box-submenu" data-role="combo-submenu">
+              <div class="combo-box-submenu-item">
+                <span class="icon-download-cloud"></span>
+                <span class="submenu-title">A sub menu sub item</span>
+              </div>
+              <div class="combo-box-submenu-item">
+                <span class="icon-gift"></span>
+                <span class="submenu-title">A sub menu sub item</span>
+              </div>
+              <div class="combo-box-submenu-item last">
+                <span class="icon-headphones"></span>
+                <span class="submenu-title">A sub menu sub item</span>
+              </div>
+            </div>
+            <div class="global-box-btn right" data-toggle="dropdown">
+              <span class="icon-menu"></span>
+            </div>
+          </div>      
+        
+        <!-- END COMBO BOX -->
+        <hr />
+        <!-- ONE BTN BOX -->
+        
+          <div class="global-box">
+            <p>One btn box</p>
+            <div class="global-box-btn right">
+              <span class="icon-search"></span>
+            </div>
+          </div>
+        
+        <!-- END ONE BTN BOX-->
+        <hr />
+        <!-- ONE BTN BOX -->
+        
+          <div class="global-box extra-left-margin">
+            <p>One btn box</p>
+            <div class="global-box-btn left">
+              <span class="icon-search"></span>
+            </div>
+          </div>
+        
+        <!-- END ONE BTN BOX-->
+        <hr />
+        <!-- TWO BTNS BOX -->
+        
+          <div class="global-box title-center">
+            <p>One btn box</p>
+            <div class="global-box-btn right">
+              <span class="icon-gift"></span>
+            </div>
+            <div class="global-box-btn left">
+              <span class="icon-headphones"></span>
+            </div>
+          </div>
+        
+        <!-- END TWO BTNS BOX-->        
+        
+        
       </div>
+      <!-- <div id="menu">
+        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
+        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
+        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
+        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
+        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
+      </div> -->
     </div>
-    <!-- END -->
-
-    <!-- LIST WITH ICON AND ARROW -->
-    <div style="margin:50px">
-      <ul class="list">
-        <li class="icon-list">
-          <div>
-            <span class="icon-website-circled blue"></span>
-          </div>
-          <div>
-            Designmodo
-            <span class="icon-angle-right"></span>       
-            <p class="subtitle">this is a short summary</p>
-          </div>          
-        </li>
-        <li class="icon-list">
-          <div>
-            <span class="icon-inbox-circled"></span>
-          </div>
-          <div>
-            Designmodo
-            <span class="icon-angle-right"></span>       
-            <p class="subtitle">dewcribe what we do</p>
-          </div>          
-        </li>
-      </ul>
-    </div>
-    <!-- END -->
-
-    <!-- LIST WITH BADGE-->
-    <div style="margin:50px">
-      <ul class="list">
-        <li>Designmodo<span class="badge">230<span></li>
-        <li>Design legion<span class="badge">115<span></li>
-        <li>Smashing mag<span class="badge">26<span></li>
-        <li>CSS liars<span class="badge">97<span></li>
-      </ul>
-    </div>
-    <!-- END -->
-
-    <!-- CHECKBOX -->
-    <div style="margin:50px">
-      <label class="checkbox inline">
-        <input type="checkbox" class="regular-checkbox big-checkbox" checked value="option1"> 
-        Ma checkbox
-      </label>
-      <label class="checkbox inline">
-        <input type="checkbox" class="regular-checkbox" checked value="option1"> 
-        Ma checkbox
-      </label>
-    </div>
-    <!-- END CHECKBOX -->
-
-    <!-- RADIO BUTTON LIST -->
-    <div style="margin:50px">
-      <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked />
-      <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" />
-      <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio" />
-    </div>
-    <!-- END RADIO BTN LIST-->
-
-    <!-- COMBO BOX -->
-    <div style="margin:50px;">
-      <div class="global-box">
-        <p>Combo box</p>
-        <div class="combo-box-submenu" data-role="combo-submenu">
-          <div class="combo-box-submenu-item">
-            <span class="icon-download-cloud"></span>
-            <span class="submenu-title">A sub menu sub item</span>
-          </div>
-          <div class="combo-box-submenu-item">
-            <span class="icon-gift"></span>
-            <span class="submenu-title">A sub menu sub item</span>
-          </div>
-          <div class="combo-box-submenu-item last">
-            <span class="icon-headphones"></span>
-            <span class="submenu-title">A sub menu sub item</span>
-          </div>
-        </div>
-        <div class="global-box-btn right" data-toggle="dropdown">
-          <span class="icon-menu"></span>
-        </div>
-      </div>      
-    </div>
-    <!-- END COMBO BOX -->
-
-    <!-- ONE BTN BOX -->
-    <div style="margin:50px;">
-      <div class="global-box">
-        <p>One btn box</p>
-        <div class="global-box-btn right">
-          <span class="icon-search"></span>
-        </div>
-      </div>
-    </div>
-    <!-- END ONE BTN BOX-->
-
-    <!-- ONE BTN BOX -->
-    <div style="margin:50px;">
-      <div class="global-box extra-left-margin">
-        <p>One btn box</p>
-        <div class="global-box-btn left">
-          <span class="icon-search"></span>
-        </div>
-      </div>
-    </div>
-    <!-- END ONE BTN BOX-->
-
-    <!-- TWO BTNS BOX -->
-    <div style="margin:50px;">
-      <div class="global-box title-center">
-        <p>One btn box</p>
-        <div class="global-box-btn right">
-          <span class="icon-gift"></span>
-        </div>
-        <div class="global-box-btn left">
-          <span class="icon-headphones"></span>
-        </div>
-      </div>
-    </div>
-    <!-- END TWO BTNS BOX-->
+    
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>

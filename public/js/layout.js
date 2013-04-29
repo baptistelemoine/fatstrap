@@ -14,6 +14,30 @@
 	}
   );
 
+  var Menu = {
+    $wrapper:$('#main'),
+    open:function(){
+        // this.$el.parent().show();
+        this.$wrapper.css('transform','translateX(300px)');
+        this.isOpen = true;
+      },
+
+      close:function(){
+        this.$wrapper.css('transform','translateX(0px)');
+        this.isOpen = false;
+      },
+
+      openClose:function(e){
+        return this.isOpen ? this.close() : this.open();
+      }
+  };
+
+
+
+  //open close menu
+  $('#btn-menu').on('click', function (e){
+    Menu.openClose();
+  });
   
 
 }(jQuery));
