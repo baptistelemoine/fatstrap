@@ -15,15 +15,17 @@
   );
 
   var Menu = {
-    $wrapper:$('#main'),
+    $wrapper:$('#wrapper'),
     open:function(){
         // this.$el.parent().show();
-        this.$wrapper.css('transform','translateX(300px)');
+        this.$wrapper.css('transform','translateX(260px)');
+        // this.$wrapper.css('margin-left', '260px')
         this.isOpen = true;
       },
 
       close:function(){
         this.$wrapper.css('transform','translateX(0px)');
+        // this.$wrapper.css('margin-left', '0')
         this.isOpen = false;
       },
 
@@ -36,7 +38,7 @@
 
   //open close menu
   $('#btn-menu').on('click', function (e){
-    Menu.openClose();
+    // Menu.openClose();
   });
   
 

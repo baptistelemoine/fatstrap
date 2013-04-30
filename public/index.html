@@ -2,107 +2,148 @@
 <html>
   <head>
     <title>Square UI css</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/fatstrap.css">    
+    <link rel="stylesheet" type="text/css" href="css/fatstrap.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   </head>
   
   <body>
-    <div id="wrapper">
-      
-      <div id="main">
-        <!-- HEADER TWO BUTTONS -->
-        <div class="navbar navbar-fixed-top">
-          <div class="header global-box title-center">
-            <p>Accueil</p>
-            <div class="global-box-btn right">
-              <span class="icon-menu"></span>
-            </div>
-            <div id="btn-menu" class="global-box-btn left">
-              <span class="icon-angle-left"></span>
-            </div>
+    <input type="checkbox" name="handler-right" class="handler" id="handler-right" onclick="null" />
+    <input type="checkbox" name="handler-left" class="handler" id="handler-left" onclick="null" />
+
+    <div id="menu">
+      <ul class="list left-menu" style="margin-top:60px">
+        <li class="icon-list">
+          <div class="button rounded bg-orange">
+            <span class="icon-doc-alt"></span>
           </div>
+          <div>
+            Actualités
+            <span class="icon-angle-right"></span>       
+            <p class="subtitle">Nos dernières publications</p>
+          </div>          
+        </li>
+        <li class="icon-list">
+          <div class="button rounded bg-purple">
+            <span class="icon-eye"></span>
+          </div>
+          <div>
+            Espace presse
+            <span class="icon-angle-right"></span>       
+            <p class="subtitle">Communiqués et invitations</p>
+          </div>          
+        </li>
+        <li class="icon-list">
+          <div class="button rounded bg-pink">
+            <span class="icon-gift"></span>
+          </div>
+          <div>
+            Offres d'emploi
+            <span class="icon-angle-right"></span>       
+            <p class="subtitle">Les offres dans le réseau</p>
+          </div>          
+        </li>
+      </ul>
+      <!-- END -->
+    </div>
+
+    <div id="wrapper">
+
+      <!-- HEADER TWO BUTTONS -->
+      <!-- <div class="navbar-fixed-top"> -->
+      <div class="header global-box title-center">
+        <p>Accueil</p>
+        <div class="global-box-btn right">
+          <span class="icon-menu"></span>
+        </div>
+        <label for="handler-left" id="btn-menu" class="global-box-btn left">
+          <span class="icon-angle-left"></span>
+        </label>
+      </div>
+      <!-- </div> -->
+      <!-- END -->
+
+      <div id="content">
+
+        <!-- CONTENT BOX ARTICLE -->
+        <div class="content-box article">
+          <div class="left-nav">
+            <div class="button square sticky bg-orange"><span class="icon-doc-alt" /></div>
+            <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
+          </div>        
+          <div class="content-box-header">
+            <span>Dossier : L'agriculteur, acteur économique</span><span class="badge">234</span>
+          </div>
+          <div class="title-container">
+            <p>L'avis du CESE sur la gestion de l'eau en agriculture est voté dans la discorde</p>
+          </div>
+          <img src="images/test2.png" />
+          <div class="summary-container">
+            <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
+          </div>
+          <div class="content-box-footer">
+            <span class="icon-clock"></span><span>il y a 4 jours</span>
+          </div> 
+        </div>
+        <!-- END -->
+        <hr />
+        <!-- CONTENT BOX ARTICLE -->
+        <div class="content-box">
+          <div class="left-nav">
+            <div class="button square sticky bg-purple"><span class="icon-eye" /></div>
+            <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
+          </div>        
+          <div class="content-box-header">
+            <span>Les offres d'emploi du réseau</span><span class="badge">34</span>
+          </div>
+          <div class="title-container">
+            <p>La FRSEA Rhône-Alpes recrute sont directeur (H/F)</p>
+          </div>
+          <div class="summary-container">
+            <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
+          </div>
+          <div class="content-box-footer">
+            <span class="icon-clock"></span><span>il y a 4 jours</span>
+          </div>          
         </div>
         <!-- END -->
 
-        <div id="content-container">
-
-          <!-- CONTENT BOX ARTICLE -->
-            <div class="content-box article">
-              <div class="left-nav">
-                <div class="button square sticky bg-blue"><span class="icon-doc-alt" /></div>
-                <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
-              </div>        
-              <div class="content-box-header">
-                <span>Dossier : L'agriculteur, acteur économique</span><span class="badge">234</span>
-              </div>
-              <div class="title-container">
-                <p>L'avis du CESE sur la gestion de l'eau en agriculture est voté dans la discorde</p>
-              </div>
-              <img src="images/test2.png" />
-              <div class="summary-container">
-                <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
-              </div>
-              <div class="content-box-footer">
-                <span class="icon-clock"></span><span>il y a 4 jours</span>
-              </div> 
-            </div>
-          <!-- END -->
-          <hr />
-          <!-- CONTENT BOX ARTICLE -->
-          <div class="content-box">
-            <div class="left-nav">
-              <div class="button square sticky bg-purple"><span class="icon-eye" /></div>
-              <div class="button square sticky bg-blue-twitter"><span class="icon-exchange" /></div>
-            </div>        
-            <div class="content-box-header">
-              <span>Les offres d'emploi du réseau</span><span class="badge">34</span>
-            </div>
-            <div class="title-container">
-              <p>La FRSEA Rhône-Alpes recrute sont directeur (H/F)</p>
-            </div>
-            <div class="summary-container">
-              <p>Polaris UI Free is a set of beautiful free UI components, which includes Edit Boxes, Check Boxes, Radio Buttons.</p>
-            </div>
-            <div class="content-box-footer">
-              <span class="icon-clock"></span><span>il y a 4 jours</span>
-            </div>          
-          </div>
-        <!-- END -->
         <hr />
         <!-- LIST WITH ICON AND ARROW -->
-          <ul class="list background-enabled">
-            <li class="icon-list">
-              <div>
-                <span class="icon-website-circled blue"></span>
-              </div>
-              <div>
-                Designmodo
-                <span class="icon-angle-right"></span>       
-                <p class="subtitle">this is a short summary</p>
-              </div>          
-            </li>
-            <li class="icon-list">
-              <div>
-                <span class="icon-inbox-circled"></span>
-              </div>
-              <div>
-                Designmodo
-                <span class="icon-angle-right"></span>       
-                <p class="subtitle">dewcribe what we do</p>
-              </div>          
-            </li>
-          </ul>
+        <ul class="list background-enabled">
+          <li class="icon-list">
+            <div>
+              <span class="icon-website-circled blue"></span>
+            </div>
+            <div>
+              Designmodo
+              <span class="icon-angle-right"></span>       
+              <p class="subtitle">this is a short summary</p>
+            </div>          
+          </li>
+          <li class="icon-list">
+            <div>
+              <span class="icon-inbox-circled"></span>
+            </div>
+            <div>
+              Designmodo
+              <span class="icon-angle-right"></span>       
+              <p class="subtitle">dewcribe what we do</p>
+            </div>          
+          </li>
+        </ul>
         <!-- END -->
         <hr />
         <!-- LIST WITH BADGE-->
-          <ul class="list">
-            <li>Designmodo<span class="badge">230<span></li>
-            <li>Design legion<span class="badge">115<span></li>
-            <li>Smashing mag<span class="badge">26<span></li>
-            <li>CSS liars<span class="badge">97<span></li>
-          </ul>
+        <ul class="list">
+          <li>Designmodo<span class="badge">230<span></li>
+          <li>Design legion<span class="badge">115<span></li>
+          <li>Smashing mag<span class="badge">26<span></li>
+          <li>CSS liars<span class="badge">97<span></li>
+        </ul>
         <!-- END -->
         <hr />
         <!-- CHECKBOX -->
@@ -119,84 +160,80 @@
         <!-- END CHECKBOX -->
         <hr />
         <!-- RADIO BUTTON LIST -->
-        
-          <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked />
-          <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" />
-          <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio" />
-        
+
+        <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked />
+        <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" />
+        <input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio" />
+
         <!-- END RADIO BTN LIST-->
         <hr />
         <!-- COMBO BOX -->
-        
-          <div class="global-box">
-            <p>Combo box</p>
-            <div class="combo-box-submenu" data-role="combo-submenu">
-              <div class="combo-box-submenu-item">
-                <span class="icon-download-cloud"></span>
-                <span class="submenu-title">A sub menu sub item</span>
-              </div>
-              <div class="combo-box-submenu-item">
-                <span class="icon-gift"></span>
-                <span class="submenu-title">A sub menu sub item</span>
-              </div>
-              <div class="combo-box-submenu-item last">
-                <span class="icon-headphones"></span>
-                <span class="submenu-title">A sub menu sub item</span>
-              </div>
+
+        <div class="global-box">
+          <p>Combo box</p>
+          <div class="combo-box-submenu" data-role="combo-submenu">
+            <div class="combo-box-submenu-item">
+              <span class="icon-download-cloud"></span>
+              <span class="submenu-title">A sub menu sub item</span>
             </div>
-            <div class="global-box-btn right" data-toggle="dropdown">
-              <span class="icon-menu"></span>
+            <div class="combo-box-submenu-item">
+              <span class="icon-gift"></span>
+              <span class="submenu-title">A sub menu sub item</span>
             </div>
-          </div>      
-        
+            <div class="combo-box-submenu-item last">
+              <span class="icon-headphones"></span>
+              <span class="submenu-title">A sub menu sub item</span>
+            </div>
+          </div>
+          <div class="global-box-btn right" data-toggle="dropdown">
+            <span class="icon-menu"></span>
+          </div>
+        </div>      
+
         <!-- END COMBO BOX -->
         <hr />
         <!-- ONE BTN BOX -->
-        
-          <div class="global-box">
-            <p>One btn box</p>
-            <div class="global-box-btn right">
-              <span class="icon-search"></span>
-            </div>
+
+        <div class="global-box">
+          <p>One btn box</p>
+          <div class="global-box-btn right">
+            <span class="icon-search"></span>
           </div>
-        
+        </div>
+
         <!-- END ONE BTN BOX-->
         <hr />
         <!-- ONE BTN BOX -->
-        
-          <div class="global-box extra-left-margin">
-            <p>One btn box</p>
-            <div class="global-box-btn left">
-              <span class="icon-search"></span>
-            </div>
+
+        <div class="global-box extra-left-margin">
+          <p>One btn box</p>
+          <div class="global-box-btn left">
+            <span class="icon-search"></span>
           </div>
-        
+        </div>
+
         <!-- END ONE BTN BOX-->
         <hr />
         <!-- TWO BTNS BOX -->
-        
-          <div class="global-box title-center">
-            <p>One btn box</p>
-            <div class="global-box-btn right">
-              <span class="icon-gift"></span>
-            </div>
-            <div class="global-box-btn left">
-              <span class="icon-headphones"></span>
-            </div>
+
+        <div class="global-box title-center">
+          <p>One btn box</p>
+          <div class="global-box-btn right">
+            <span class="icon-gift"></span>
           </div>
-        
+          <div class="global-box-btn left">
+            <span class="icon-headphones"></span>
+          </div>
+        </div>
+
         <!-- END TWO BTNS BOX-->        
-        
+
+
         
       </div>
-      <!-- <div id="menu">
-        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
-        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
-        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
-        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
-        <p>dfnjkdfjkdfhgjhdfjkjfgk</p>
-      </div> -->
+      
     </div>
+
     
 
     <script type="text/javascript" src="js/jquery.js"></script>

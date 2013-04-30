@@ -1,33 +1,73 @@
-body{
+body, html{
 	font-family: @font-family-montserrat;
 	font-size: @font-size-base;
-	color: @text-color;
-	background-color: @background-color-base;
+	color: @text-color;	
 	.body-bg(@theme);
+  overflow:hidden;
+  width:100%;
+  height:100%;
+  position: relative;
 }
 
 #wrapper{
   position: relative;
-  overflow: hidden;
+  background-color: @background-color-base;
+  z-index: 2;
+  height: 100%;
+  box-shadow: -10px 0 20px rgba(0,0,0,.5);
+  -webkit-transform: translate3D(0,0,0);
+  -moz-transform: translate3D(0,0,0);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+}
+
+.handler {
+  display: none;
+
+  &#handler-left:checked {
+    
+    & ~ #menu {
+      opacity: 1;
+      -webkit-transition: opacity 0s 0s;
+      -moz-transition: opacity 0s 0s;
+    }
+    
+    & ~ #wrapper {
+      -webkit-transform: translate3D(300px,0,0);
+      -moz-transform: translate3D(300px,0,0);
+    
+      #content {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+label{
+  margin:0;
+}
+
+#content {
+  padding: 30px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
 }
 
 #menu{
   position: fixed;
-  height:100%;
-  width:300px;
-}
-
-#main{
-  // position: absolute;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-#content-container{
-  padding: 90px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 1;
+  background: #232323;
+  overflow: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0s .5s;
 }
 
 hr{
@@ -61,10 +101,6 @@ ul, li { list-style: none;}
   font-weight: normal;
 }
 
-.blue{
-  color:@blue !important;
-}
-
 .bg-blue{
   background-color: @blue;
 }
@@ -78,6 +114,29 @@ ul, li { list-style: none;}
 }
 
 .bg-purple{
-  background-color:#6a5a8c;
+  background-color:@purple;
 }
 
+.bg-orange{
+  background-color: @orange;
+}
+
+.bg-purple{
+  color:@purple;
+}
+
+.bg-pink{
+  background-color: @pink;
+}
+
+.purple{
+  color:#6a5a8c;
+}
+
+.pink{
+  color: #8c5d79;
+}
+
+.blue{
+  color:@blue !important;
+}

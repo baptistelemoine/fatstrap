@@ -1,44 +1,60 @@
 
-ul.list{
+ul.list {
+	
 	margin: 0;
-}
 
-ul.list li {
-	color: #232323;
-	padding: 15px 0 15px;
-	&:not(:last-child){
-		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-	}
-	&:hover{
-		// background-color: @green;
-	}
-	p.subtitle{	
-		font-size: @font-size-small;
-		.opacity(0.5);
-	}
-	&.icon-list{
-		padding: 10px 0 0;
-	}
-	span[class^="icon-angle"]{
-		float: right;
-		margin-top: 5px;
-		font-size: 24px;
-		.opacity(0.1);
-	}
-	div:first-child {
-		position: absolute;
-		span[class^="icon"]{
-			font-size: 36px;
-			color:@green;
-			&:before{
-				background-color: #fff;
-				border-radius: 30px;
+	&.left-menu{
+		li{
+			color: #fff;
+			padding: 15px;
+			&:not(:last-child){
+				border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 			}
 		}
+		p.subtitle{	
+			font-size: 11px;
+			.opacity(0.5);
+		}		
 	}
-	div:last-child {
-		margin-left: 60px;
+
+	li{
+		color: #232323;
+		padding: 15px 0 15px;
+		&:not(:last-child){
+			border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+		}
+		&:hover{
+			// background-color: @green;
+		}
+		p.subtitle{	
+			font-size: @font-size-small;
+			.opacity(0.5);
+		}
+		&.icon-list{
+			padding: 15px 0 5px;
+		}
+		span[class^="icon-angle"]{
+			float: right;
+			margin-top: 5px;
+			font-size: 24px;
+			.opacity(0.1);
+		}
+		div:first-child:not(.button) {
+			position: absolute;
+			span[class^="icon"]{
+				font-size: 36px;
+				color:@green;
+				&:before{
+					background-color: #fff;
+					border-radius: 30px;
+				}
+			}
+		}
+		div:last-child {
+			margin-left: 60px;
+		}
 	}
+	
 }
 
 ul.list.background-enabled{

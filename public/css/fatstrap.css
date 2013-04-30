@@ -1,27 +1,62 @@
-body {
+body,
+html {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #232323;
-  background-color: #eeeeee;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 #wrapper {
   position: relative;
+  background-color: #eeeeee;
+  z-index: 2;
+  height: 100%;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+}
+.handler {
+  display: none;
+}
+.handler#handler-left:checked ~ #menu {
+  opacity: 1;
+  -webkit-transition: opacity 0s 0s;
+  -moz-transition: opacity 0s 0s;
+}
+.handler#handler-left:checked ~ #wrapper {
+  -webkit-transform: translate3D(300px, 0, 0);
+  -moz-transform: translate3D(300px, 0, 0);
+}
+.handler#handler-left:checked ~ #wrapper #content {
   overflow: hidden;
+}
+label {
+  margin: 0;
+}
+#content {
+  padding: 30px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
 }
 #menu {
   position: fixed;
-  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 300px;
-}
-#main {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-#content-container {
-  padding: 90px;
+  z-index: 1;
+  background: #232323;
+  overflow: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0s .5s;
 }
 hr {
   border: 0;
@@ -39,9 +74,6 @@ li {
   padding: 4px 6px;
   font-weight: normal;
 }
-.blue {
-  color: #5a9aa8 !important;
-}
 .bg-blue {
   background-color: #5a9aa8;
 }
@@ -53,6 +85,24 @@ li {
 }
 .bg-purple {
   background-color: #6a5a8c;
+}
+.bg-orange {
+  background-color: #de8650;
+}
+.bg-purple {
+  color: #6a5a8c;
+}
+.bg-pink {
+  background-color: #8c5d79;
+}
+.purple {
+  color: #6a5a8c;
+}
+.pink {
+  color: #8c5d79;
+}
+.blue {
+  color: #5a9aa8 !important;
 }
 .global-box {
   width: 325px;
@@ -344,6 +394,22 @@ label.radio {
 ul.list {
   margin: 0;
 }
+ul.list.left-menu li {
+  color: #fff;
+  padding: 15px;
+}
+ul.list.left-menu li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+ul.list.left-menu p.subtitle {
+  font-size: 11px;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
+}
 ul.list li {
   color: #232323;
   padding: 15px 0 15px;
@@ -361,7 +427,7 @@ ul.list li p.subtitle {
   filter: alpha(opacity=50);
 }
 ul.list li.icon-list {
-  padding: 10px 0 0;
+  padding: 15px 0 5px;
 }
 ul.list li span[class^="icon-angle"] {
   float: right;
@@ -374,14 +440,14 @@ ul.list li span[class^="icon-angle"] {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
   filter: alpha(opacity=10);
 }
-ul.list li div:first-child {
+ul.list li div:first-child:not(.button) {
   position: absolute;
 }
-ul.list li div:first-child span[class^="icon"] {
+ul.list li div:first-child:not(.button) span[class^="icon"] {
   font-size: 36px;
   color: #1f7f5c;
 }
-ul.list li div:first-child span[class^="icon"]:before {
+ul.list li div:first-child:not(.button) span[class^="icon"]:before {
   background-color: #fff;
   border-radius: 30px;
 }
@@ -413,6 +479,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
 }
 .content-box {
   width: 485px;
+  margin-left: 60px;
   position: relative;
   background-color: #fff;
 }
@@ -486,5 +553,15 @@ ul.list.background-enabled li span[class^="icon-angle"] {
 .button.square.sticky span[class^="icon"]:before {
   margin: 19px;
   font-size: 22px;
+  color: #fff;
+}
+.button.rounded {
+  border-radius: 30px;
+  padding: 8px 5px;
+  left: 8px;
+  position: absolute;
+}
+.button.rounded span[class^="icon"] {
+  font-size: 20px;
   color: #fff;
 }
