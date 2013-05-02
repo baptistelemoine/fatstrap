@@ -1,5 +1,14 @@
 (function($){
 
+  window.addEventListener('load', function() {
+    FastClick.attach(document.body);
+  }, false);
+
+  $(window).on('resize', function(e){
+      console.log($(this).width());
+  })
+  
+
   //COMBO BOX SETTINGS
   //on btn expand click
   $('[data-toggle=dropdown]').on('click', function (e){
