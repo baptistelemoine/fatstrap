@@ -52,36 +52,94 @@
 	.content-box-footer{
 		padding: 20px;
 		border-top: 1px solid rgba(0, 0, 0, 0.05);
-		span{
+		span:not(.badge){
 			.opacity(0.3);
 		}
 		span:not([class^="icon-"]){
 			margin-left: 5px;
+			margin-right: 20px;
 		}
 	}
 
 	&.photo-box{
 		.img-container{
 			padding: 30px;
-			overflow:auto;
 			img { margin: 0; }
 			ul{ overflow: auto; }
 			ul li{
 				width: 25%;
 				float:left;
-				// outline: 3px solid #fff;
 				box-sizing:border-box;
 				border:2px solid #fff;
-				height:48px;
+				height: 48px;
 				overflow: hidden;
+				background-color: #eee;
 			}
 			ul li:first-child{
 				width:50%;
 				height: auto;
 				max-height: 96px;
 			}
-			ul li.null{ background-color: #eee; }
 		}
+		.title-container{
+			span.badge { 
+				vertical-align: middle;
+				margin-left: 10px;
+				margin-top: -3px;
+			}
+			padding-top: 40px;
+
+		}
+	}
+
+	&.video-box{
+		.video-thumb{
+			padding: 30px;
+			background-color: #285258;
+			position:relative;
+			background-clip: content-box;
+			img{
+				.opacity(.1);
+				width: 100%;
+				margin:0;
+			}
+			.button, .video-length{
+				position: absolute;
+			}
+			.button{ 
+				left: 45%;
+				top: 40%;
+			}
+			.video-length{
+				color:#fff;
+				font-size: 18px;
+				bottom:15%;
+				right:10%;
+			}
+		}
+		.content-box-footer{
+			position:relative;
+			span{
+				text-align: center;
+			}
+			.button{
+				width:35%;
+				position: absolute;
+				right:0;
+				height:100%;
+				top: -1px;
+				border-bottom: 1px solid @green;
+				p{
+					.opacity(1);
+					margin:20px;
+					color:#fff;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.title-container{ padding-top: 0; }
 	}
 
 	-webkit-transition: all .2s ease;
@@ -92,7 +150,7 @@
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
-	.content-box > .content-box-header, .title-container, .summary-container, .content-box-footer{
+	.content-box > .content-box-header, .title-container, .summary-container, .content-box-footer, &.photo-box .img-container{
 		margin-right: 60px;	
 	}	
 }

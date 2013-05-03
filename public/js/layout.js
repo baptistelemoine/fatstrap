@@ -23,32 +23,6 @@
 	}
   );
 
-  var Menu = {
-    $wrapper:$('#wrapper'),
-    open:function(){
-        // this.$el.parent().show();
-        this.$wrapper.css('transform','translateX(260px)');
-        // this.$wrapper.css('margin-left', '260px')
-        this.isOpen = true;
-      },
-
-      close:function(){
-        this.$wrapper.css('transform','translateX(0px)');
-        // this.$wrapper.css('margin-left', '0')
-        this.isOpen = false;
-      },
-
-      openClose:function(e){
-        return this.isOpen ? this.close() : this.open();
-      }
-  };
-
-
-
-  //open close menu
-  $('#btn-menu').on('click', function (e){
-    // Menu.openClose();
-  });
   
 
 }(jQuery));

@@ -5,6 +5,19 @@
   "glyphs": [
     {
       "search": [
+        "play",
+        "player"
+      ],
+      "code": 9654,
+      "from": 9654,
+      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
+      "css": "play",
+      "orig_css": "play",
+      "orig_code": 9654,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
         "ok",
         true,
         "check",
@@ -59,12 +72,50 @@
         "eye",
         "subscribe"
       ],
+      "code": 59392,
+      "uid": "25fc99a30fecc4021fdcae5fff5ba9ac",
+      "css": "eye-1",
+      "orig_css": "eye",
+      "orig_code": 59392,
+      "src": "entypo",
+      "from": 59146
+    },
+    {
+      "search": [
+        "eye",
+        "subscribe"
+      ],
       "code": 59146,
       "from": 59146,
       "uid": "c5fd349cbd3d23e4ade333789c29c729",
       "css": "eye",
       "orig_css": "eye",
       "orig_code": 59146,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "share"
+      ],
+      "code": 59196,
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "share",
+      "orig_css": "share",
+      "orig_code": 59196,
+      "src": "entypo",
+      "from": 59196
+    },
+    {
+      "search": [
+        "play",
+        "player"
+      ],
+      "code": 59233,
+      "from": 59233,
+      "uid": "e835d9d0f2ee39ae01b01cc6a6fa24ab",
+      "css": "play-circle2",
+      "orig_css": "play-circle2",
+      "orig_code": 59233,
       "src": "fontawesome"
     },
     {
@@ -196,6 +247,33 @@
     },
     {
       "search": [
+        "mic"
+      ],
+      "code": 127908,
+      "uid": "1e099a876c8a6a83f10c9bafa9886614",
+      "css": "mic",
+      "orig_css": "mic",
+      "orig_code": 127908,
+      "src": "entypo",
+      "from": 127908
+    },
+    {
+      "search": [
+        "facetime",
+        "movie",
+        "video",
+        "film"
+      ],
+      "code": 127909,
+      "from": 127909,
+      "uid": "0f99ab40ab0b4d64a74f2d0deeb03e42",
+      "css": "videocam",
+      "orig_css": "videocam",
+      "orig_code": 127909,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
         "sound",
         "music",
         "headphones"
@@ -206,6 +284,46 @@
       "css": "headphones",
       "orig_css": "headphones",
       "orig_code": 127911,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "users",
+        "contacts",
+        "friends"
+      ],
+      "code": 128101,
+      "uid": "ecf8edb95c3f45eb433b4cce7ba9f740",
+      "css": "users",
+      "orig_css": "users",
+      "orig_code": 128101,
+      "src": "entypo",
+      "from": 128101
+    },
+    {
+      "search": [
+        "camera",
+        "photo"
+      ],
+      "code": 59393,
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera-1",
+      "orig_css": "camera",
+      "orig_code": 59393,
+      "src": "entypo",
+      "from": 128247
+    },
+    {
+      "search": [
+        "camera",
+        "photo"
+      ],
+      "code": 128247,
+      "from": 128247,
+      "uid": "dc3f1d5b1d006f7f7b3b6295eccab9da",
+      "css": "camera",
+      "orig_css": "camera",
+      "orig_code": 128247,
       "src": "fontawesome"
     },
     {
