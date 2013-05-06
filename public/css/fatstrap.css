@@ -36,7 +36,7 @@ label {
   margin: 0;
 }
 #content {
-  padding: 30px;
+  padding: 20px;
   position: absolute;
   top: 60px;
   left: 0;
@@ -46,10 +46,10 @@ label {
 }
 #columns {
   -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
+  -webkit-column-gap: 15px;
   -webkit-column-fill: auto;
   -moz-column-count: 2;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 15px;
   -moz-column-fill: auto;
   column-count: 2;
   column-gap: 15px;
@@ -577,14 +577,14 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   padding: 30px 30px 0;
 }
 .content-box .title-container p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
 }
 .content-box .summary-container {
   padding: 0 30px 30px;
 }
 .content-box .summary-container p {
-  font-size: 16px;
+  font-size: 14px;
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -614,6 +614,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
 }
 .content-box.photo-box .img-container img {
   margin: 0;
+  height: auto;
 }
 .content-box.photo-box .img-container ul {
   overflow: auto;
@@ -622,15 +623,13 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   width: 25%;
   float: left;
   box-sizing: border-box;
-  border: 2px solid #fff;
-  height: 48px;
+  border: 1px solid #fff;
   overflow: hidden;
   background-color: #eee;
 }
 .content-box.photo-box .img-container ul li:first-child {
   width: 50%;
   height: auto;
-  max-height: 96px;
 }
 .content-box.photo-box .title-container {
   padding-top: 40px;
@@ -700,12 +699,14 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   padding-top: 0;
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
-  .content-box > .content-box-header,
-  .title-container,
-  .summary-container,
-  .content-box-footer,
-  .photo-box .img-container {
-    margin-right: 60px;
+  /*.content-box > .content-box-header, .title-container, .summary-container, .content-box-footer, &.photo-box .img-container{
+  		margin-right: 60px;	
+  	}*/.content-box {
+    width: 80%;
+  }
+  .content-box .content-box-header,
+  .content-box .content-box-footer {
+    font-size: 12px;
   }
 }
 .button.square {
