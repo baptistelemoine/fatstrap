@@ -1,0 +1,27 @@
+{
+  "name": "fatstrap",
+  "version": "0.0.1",
+  "private" : "true",
+  "description": "square ui tablet interface",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.2.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.5.1",
+    "grunt-contrib-watch": "~0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baptistelemoine/fatstrap.git"
+  },
+  "author": "baptiste",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "c910f80ae8b3076de7a58cc011e40cee5c78c950"
+}
