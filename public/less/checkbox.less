@@ -15,7 +15,11 @@ input[type="checkbox"]{
     margin-top: 0;
     border-radius: 0;
     &:checked{
-    	background-color: @green;
+        &.purple { background-color: @purple}
+        &.green { background-color: @green}
+        &.orange { background-color: @orange}
+        &.blue { background-color: @blue}
+        &.pink { background-color: @pink}
     }
     &:checked:after{
     	font-family: @font-family-fontello;
@@ -26,18 +30,14 @@ input[type="checkbox"]{
     	left: 5px;
     	color: #fff;
     }
-    .regular-checkbox-theme(@theme);
-}
 
-.regular-checkbox-theme(dark){
-	background-color: @dark;
-	// color:#fff;
-	border: 1px solid rgba(255, 255, 255, .05);
-}
+    border: 1px solid rgba(255, 255, 255, 0);
 
-.regular-checkbox-theme(light){
-	background-color: @light;
-	border: 1px solid rgba(255, 255, 255, 0);
+    &.dark{
+        color:#fff;
+        border: 1px solid rgba(255, 255, 255, .05);
+    }
+
 }
 
 .big-checkbox {
@@ -49,11 +49,4 @@ input[type="checkbox"]{
     left: 11px;
     top: 9px;
 }
-
-label.checkbox{
-    color: @dark;
-    .label-color(@theme);
-}
-
-.label-color(@theme) when (@theme = dark) { color: #fff; }
 
