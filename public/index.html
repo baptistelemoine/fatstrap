@@ -84,11 +84,16 @@
         </label>
         <label for="handler-combo" class="button square right">
           <span class="icon-dot-3"></span>
-          <ul class="combo-box">
-            <li>
+          <ul class="combo-box accordion">
+            <li class="accordion-toggle" data-toggle="collapse" href="#collapseOne">
               <span class="icon-star"></span>
-              <span class="submenu-title">Favoris</span>
+              <span class="submenu-title">Favoris</span>              
             </li>
+            <div id="collapseOne" class="collapse">
+              <div>
+                Anim pariatur cliche...
+              </div>
+            </div>
             <li>
               <span class="icon-search"></span>
               <span class="submenu-title">Rechercher</span>
@@ -293,5 +298,6 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
