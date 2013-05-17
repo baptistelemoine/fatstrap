@@ -50,11 +50,16 @@ body, html{
       label[for="handler-filter"]{
         background-color: @green;
       }
+      label[for="handler-combo"]{
+        pointer-events:none;
+      }
       div.filter-menu {
         visibility: visible;
       }
       #content{
-        top: 120px;
+        -webkit-transform: translate3D(0,60px,0);
+        -moz-transform: translate3D(0,60px,0);
+
       }      
     }
   }
@@ -64,6 +69,9 @@ body, html{
     & ~ #wrapper {
       label[for="handler-combo"]{
         background-color: @green;
+      }
+      label[for="handler-filter"]{
+        pointer-events:none;
       }
       ul.combo-box {
         visibility: visible;
@@ -85,8 +93,8 @@ label{
   // bottom: 60px;
   bottom: 0px;
   overflow-y: scroll;
-  -webkit-transition-property: top;
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
   z-index: 1;
 }
 

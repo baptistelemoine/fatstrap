@@ -39,14 +39,21 @@ html {
 .handler#handler-filter:checked ~ #wrapper label[for="handler-filter"] {
   background-color: #1f7f5c;
 }
+.handler#handler-filter:checked ~ #wrapper label[for="handler-combo"] {
+  pointer-events: none;
+}
 .handler#handler-filter:checked ~ #wrapper div.filter-menu {
   visibility: visible;
 }
 .handler#handler-filter:checked ~ #wrapper #content {
-  top: 120px;
+  -webkit-transform: translate3D(0, 60px, 0);
+  -moz-transform: translate3D(0, 60px, 0);
 }
 .handler#handler-combo:checked ~ #wrapper label[for="handler-combo"] {
   background-color: #1f7f5c;
+}
+.handler#handler-combo:checked ~ #wrapper label[for="handler-filter"] {
+  pointer-events: none;
 }
 .handler#handler-combo:checked ~ #wrapper ul.combo-box {
   visibility: visible;
@@ -62,8 +69,8 @@ label {
   right: 0;
   bottom: 0px;
   overflow-y: scroll;
-  -webkit-transition-property: top;
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
   z-index: 1;
 }
 #columns {
@@ -659,14 +666,14 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   float: left;
   box-sizing: border-box;
   border: 1px solid #fff;
-  min-height: 40px;
+  height: 48px;
   overflow: hidden;
   background-color: #eee;
 }
 .content-box.photo-box .img-container ul li:first-child {
   width: 50%;
   height: auto;
-  min-height: 80px;
+  max-height: 96px;
 }
 .content-box.photo-box .title-container {
   padding-top: 40px;
@@ -768,51 +775,11 @@ ul.list.background-enabled li span[class^="icon-angle"] {
 }
 .tab-bar {
   width: 100%;
-  height: 60px;
+  height: 30px;
   border: 0;
   background-color: #232323;
   color: #fff;
   position: absolute;
   bottom: 0;
-  text-align: left;
-}
-.tab-bar .button {
-  display: inline-block;
-  padding: 10px;
-  width: 15%;
-  -moz-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  /*&:not(:last-child){
-			border-right:1px solid rgba(255, 255, 255, .05);
-		}*/
-
-}
-.tab-bar .button p {
-  font-size: 12px;
-  padding: 5px;
-}
-.tab-bar .button span[class^="icon"] {
-  font-size: 18px;
-}
-.tab-bar .button.left {
-  float: left;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-.tab-bar .button.right {
-  float: right;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-.tab-bar .button:hover {
-  background-color: #1f7f5c;
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-}
-.tab-bar .logo {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 15px;
-  pointer-events: none;
+  z-index: 4;
 }
