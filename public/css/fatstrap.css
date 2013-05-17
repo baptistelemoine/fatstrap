@@ -24,20 +24,32 @@ html {
 .handler {
   display: none;
 }
-.handler#handler-left:checked ~ #menu {
+.handler#handler-menu:checked ~ #menu {
   opacity: 1;
   -webkit-transition: opacity 0s 0s;
   -moz-transition: opacity 0s 0s;
 }
-.handler#handler-left:checked ~ #wrapper {
+.handler#handler-menu:checked ~ #wrapper {
   -webkit-transform: translate3D(300px, 0, 0);
   -moz-transform: translate3D(300px, 0, 0);
 }
-.handler#handler-right:checked ~ #wrapper div.filter-menu {
+.handler#handler-menu:checked ~ #wrapper label[for="handler-menu"] {
+  background-color: #1f7f5c;
+}
+.handler#handler-filter:checked ~ #wrapper label[for="handler-filter"] {
+  background-color: #1f7f5c;
+}
+.handler#handler-filter:checked ~ #wrapper div.filter-menu {
   visibility: visible;
 }
-.handler#handler-right:checked ~ #wrapper #content {
+.handler#handler-filter:checked ~ #wrapper #content {
   top: 120px;
+}
+.handler#handler-combo:checked ~ #wrapper label[for="handler-combo"] {
+  background-color: #1f7f5c;
+}
+.handler#handler-combo:checked ~ #wrapper ul.combo-box {
+  visibility: visible;
 }
 label {
   margin: 0;
@@ -156,25 +168,34 @@ li {
   color: #fff;
 }
 ul.combo-box {
+  visibility: hidden;
   margin-left: -265px;
 }
 ul.combo-box li {
-  background-color: #1f7f5c;
+  background-color: #232323;
   width: 325px;
-  height: 60px;
+  padding: 20px;
 }
 ul.combo-box li:not(.last) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+ul.combo-box li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
 ul.combo-box li [class^="icon-"] {
-  color: #fff;
+  color: #ffffff;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
   opacity: 0.5;
+  margin-right: 10px;
+  font-size: 22px;
 }
 ul.combo-box li span.submenu-title {
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
+}
+ul.combo-box li:hover {
+  background-color: #1f7f5c;
 }
 @font-face {
   font-family: 'fontello';
@@ -275,6 +296,10 @@ ul.combo-box li span.submenu-title {
   content: '\e761';
 }
 /* '' */
+.icon-dot-3:before {
+  content: '\e802';
+}
+/* '' */
 .icon-twitter:before {
   content: '\f099';
 }
@@ -717,7 +742,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   width: 60px;
   height: 60px;
 }
-.button.square span[class^="icon"]:before {
+.button.square > span[class^="icon"]:before {
   margin: 19px;
   font-size: 22px;
   color: #fff;

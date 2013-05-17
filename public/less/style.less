@@ -27,7 +27,7 @@ body, html{
 .handler {
   display: none;
 
-  &#handler-left:checked {
+  &#handler-menu:checked {
     
     & ~ #menu {
       opacity: 1;
@@ -38,17 +38,35 @@ body, html{
     & ~ #wrapper {
       -webkit-transform: translate3D(300px,0,0);
       -moz-transform: translate3D(300px,0,0);
-    }
-  }
+      label[for="handler-menu"]{
+        background-color: @green;
+      }
+    }    
+  }  
 
-  &#handler-right:checked {
+  &#handler-filter:checked {
     
     & ~ #wrapper {
+      label[for="handler-filter"]{
+        background-color: @green;
+      }
       div.filter-menu {
         visibility: visible;
       }
       #content{
         top: 120px;
+      }      
+    }
+  }
+
+  &#handler-combo:checked {
+    
+    & ~ #wrapper {
+      label[for="handler-combo"]{
+        background-color: @green;
+      }
+      ul.combo-box {
+        visibility: visible;
       }
     }
   }

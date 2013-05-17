@@ -13,8 +13,9 @@
   </head>
   
   <body>
-    <input type="checkbox" name="handler-right" class="handler" id="handler-right" onclick="null" />
-    <input type="checkbox" name="handler-left" class="handler" id="handler-left" onclick="null" />
+    <input type="checkbox" name="handler-filter" class="handler" id="handler-filter" onclick="null" />
+    <input type="checkbox" name="handler-combo" class="handler" id="handler-combo" onclick="null" />
+    <input type="checkbox" name="handler-menu" class="handler" id="handler-menu" onclick="null" />
 
     <div id="menu">
       <ul class="list left-menu" style="margin-top:60px">
@@ -78,19 +79,31 @@
       <!-- <div class="navbar-fixed-top"> -->
       <div class="header">
         <p>Accueil</p>
-        <label for="handler-left" class="button square left">
+        <label for="handler-menu" class="button square left">
           <span class="icon-menu"></span>
         </label>
-        <label for="handler-right" class="button square right">
-          <span class="icon-cog"></span>
+        <label for="handler-combo" class="button square right">
+          <span class="icon-dot-3"></span>
           <ul class="combo-box">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <span class="icon-star"></span>
+              <span class="submenu-title">Favoris</span>
+            </li>
+            <li>
+              <span class="icon-search"></span>
+              <span class="submenu-title">Rechercher</span>
+            </li>
+            <li>
+              <span class="icon-cog"></span>
+              <span class="submenu-title">Préférences</span>
+            </li>
+            <li>
+              <span class="icon-info-circle"></span>
+              <span class="submenu-title">Informations</span>
+            </li>
           </ul>
         </label>
-        <label for="handler-right" class="button square right">
+        <label for="handler-filter" class="button square right">
           <span class="icon-filter"></span>
         </label>
       </div>
@@ -100,19 +113,19 @@
       <div class="header filter-menu">
         <div class="row-fluid">
         <label class="checkbox inline span3">
-          <input type="checkbox" class="regular-checkbox dark purple" value="option1"> 
+          <input type="checkbox" class="regular-checkbox dark orange" checked value="option1"> 
           Actu
         </label>
         <label class="checkbox inline span3">
-          <input type="checkbox" class="regular-checkbox dark blue" checked value="option1"> 
+          <input type="checkbox" class="regular-checkbox dark purple" checked value="option1"> 
           Presse
         </label>
          <label class="checkbox inline span3">
-          <input type="checkbox" class="regular-checkbox dark green" value="option1"> 
+          <input type="checkbox" class="regular-checkbox dark blue" checked value="option1"> 
           Emploi
         </label>
         <label class="checkbox inline span3">
-          <input type="checkbox" class="regular-checkbox dark orange" checked value="option1"> 
+          <input type="checkbox" class="regular-checkbox dark pink" checked value="option1"> 
           Médias
         </label>
         </div>

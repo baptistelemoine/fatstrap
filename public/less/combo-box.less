@@ -23,22 +23,30 @@
 }
 
 ul.combo-box{
-	// visibility: hidden;
+	visibility: hidden;
 	margin-left: -265px;
 	li{
-		background-color: @green;
+		background-color: @dark;
 		width: 325px;
-		height: 60px;
+		padding: 20px;
 		&:not(.last){
 			border-bottom: 1px solid rgba(255, 255, 255, .05);
 		}
+		&:first-child{
+			border-top: 1px solid rgba(255, 255, 255, .05);
+		}
 		[class^="icon-"]{
-			color: #fff;
+			color: @light;
 			.opacity(0.5);
+			margin-right:10px;
+			font-size: 22px;
 		}
 		span.submenu-title{
 			font-size: 16px;
-			color:#fff;
+			color:@light;
+		}
+		&:hover{
+			background-color: @green;
 		}
 	}
 }
