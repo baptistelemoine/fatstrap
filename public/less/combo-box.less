@@ -5,8 +5,8 @@
 }
 
 .combo-box-submenu-item{
-	height: @global-box-height;
-	width: @global-box-width + 1;
+	// height: @global-box-height;
+	// width: @global-box-width + 1;
 	background-color: @green;
 	margin-left: -1px;
 	&:not(.last){
@@ -19,5 +19,26 @@
 	span.submenu-title{
 		font-size: 16px;
 		color:#fff;
+	}
+}
+
+ul.combo-box{
+	// visibility: hidden;
+	margin-left: -265px;
+	li{
+		background-color: @green;
+		width: 325px;
+		height: 60px;
+		&:not(.last){
+			border-bottom: 1px solid rgba(255, 255, 255, .05);
+		}
+		[class^="icon-"]{
+			color: #fff;
+			.opacity(0.5);
+		}
+		span.submenu-title{
+			font-size: 16px;
+			color:#fff;
+		}
 	}
 }

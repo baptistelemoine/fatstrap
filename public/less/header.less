@@ -5,38 +5,22 @@
 	width: @header-width;
 	height: 60px;
 	border:0;
-	background-color: #232323;
+	background-color: @dark;
 	color: #fff;
-	position: absolute;
+	position: relative;
+	z-index: 3;
 	p{
 		text-transform: uppercase;
 		text-align: center;
 		padding:19px;		
 		margin:0;
 		font-size: @font-size-large;
-	}
-	.button{
-		// display: inline-block;
-		width:60px;
-		height: 60px;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		span[class^="icon"]{
-			font-size: 18px;
-		}
-		&.left { 
-			float:left; 
-			border-right:1px solid rgba(255, 255, 255, .1);
-		}
-		&.right {
-		 float:right; 
-		 border-left:1px solid rgba(255, 255, 255, .1);
-		}
-		&:hover{
-			background-color: @green;
-		}
+		width:100%;
+		pointer-events: none;
+		box-sizing:border-box;
 	}
+	
 	&.filter-menu{
 		border-top:1px solid rgba(255, 255, 255, .05);
 		box-sizing:border-box;
@@ -52,6 +36,19 @@
 		}
 		.checkbox input[type="checkbox"] {
 			float: none;
+		}
+	}
+	.button{
+		display: inline-block;
+		&:hover, &:active{
+			background-color: @green;
+		}
+		&.left{
+			border-right:1px solid rgba(255, 255, 255, .05);
+		}
+		&.right{
+			float:right;
+			border-left:1px solid rgba(255, 255, 255, .05);
 		}
 	}
 }

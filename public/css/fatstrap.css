@@ -3,6 +3,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #232323;
+  background-color: #232323;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -134,74 +135,10 @@ li {
 .blue {
   color: #5a9aa8 !important;
 }
-.global-box {
-  width: 325px;
-  height: 60px;
-  position: relative;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0);
-}
-.global-box p {
-  padding: 19px;
-  margin: 0;
-  font-size: 17.5px;
-}
-.global-box.extra-left-margin p {
-  margin-left: 60px;
-}
-.global-box.title-center {
-  text-align: center;
-}
-[class^="global-box"] [class^="icon-"]:before {
-  margin: 20px;
-  font-size: 20px;
-}
-[class^="global-box"] [class^="icon-angle"]:before {
-  margin: 15px;
-  font-size: 28px;
-}
-.global-box-btn-container {
-  position: absolute;
-}
-.global-box-btn {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-}
-.global-box-btn.left {
-  border-left: O;
-  border-right: 1px solid #eeeeee;
-}
-.global-box-btn.right {
-  right: 0;
-  border-left: 1px solid #eeeeee;
-}
-.global-box-btn:hover,
-.global-box-btn:active {
-  border-left: 0;
-  border-right: 0;
-  background-color: #1f7f5c;
-}
-.global-box-btn:hover [class^="icon-"],
-.global-box-btn:active [class^="icon-"] {
-  color: #fff;
-}
-.button-enabled {
-  border-left: 0;
-  border-right: 0;
-  background-color: #1f7f5c;
-}
-.button-enabled [class^="icon-"] {
-  color: #fff;
-}
 .combo-box-submenu {
   display: none;
 }
 .combo-box-submenu-item {
-  height: 60px;
-  width: 326px;
   background-color: #1f7f5c;
   margin-left: -1px;
 }
@@ -215,6 +152,27 @@ li {
   opacity: 0.5;
 }
 .combo-box-submenu-item span.submenu-title {
+  font-size: 16px;
+  color: #fff;
+}
+ul.combo-box {
+  margin-left: -265px;
+}
+ul.combo-box li {
+  background-color: #1f7f5c;
+  width: 325px;
+  height: 60px;
+}
+ul.combo-box li:not(.last) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+ul.combo-box li [class^="icon-"] {
+  color: #fff;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+ul.combo-box li span.submenu-title {
   font-size: 16px;
   color: #fff;
 }
@@ -455,8 +413,8 @@ input[type="radio"] {
   margin-right: 10px;
   margin-top: 0px;
   border-radius: 50px;
-  background-color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #232323;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .regular-radio:checked {
   background-color: #1f7f5c;
@@ -481,6 +439,7 @@ input[type="radio"] {
 }
 label.radio {
   color: #232323;
+  color: #fff;
 }
 ul.list {
   margin: 0;
@@ -551,7 +510,8 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   border: 0;
   background-color: #232323;
   color: #fff;
-  position: absolute;
+  position: relative;
+  z-index: 3;
 }
 .header p {
   text-transform: uppercase;
@@ -559,27 +519,10 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   padding: 19px;
   margin: 0;
   font-size: 17.5px;
-}
-.header .button {
-  width: 60px;
-  height: 60px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-}
-.header .button span[class^="icon"] {
-  font-size: 18px;
-}
-.header .button.left {
-  float: left;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-.header .button.right {
-  float: right;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-.header .button:hover {
-  background-color: #1f7f5c;
+  width: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
 }
 .header.filter-menu {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -597,6 +540,20 @@ ul.list.background-enabled li span[class^="icon-angle"] {
 }
 .header.filter-menu .checkbox input[type="checkbox"] {
   float: none;
+}
+.header .button {
+  display: inline-block;
+}
+.header .button:hover,
+.header .button:active {
+  background-color: #1f7f5c;
+}
+.header .button.left {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+.header .button.right {
+  float: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
 }
 .content-box {
   max-width: 485px;
@@ -748,9 +705,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   padding-top: 0;
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
-  /*.content-box > .content-box-header, .title-container, .summary-container, .content-box-footer, &.photo-box .img-container{
-  		margin-right: 60px;	
-  	}*/.content-box {
+  .content-box {
     width: 80%;
   }
   .content-box .content-box-header,
@@ -762,7 +717,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   width: 60px;
   height: 60px;
 }
-.button.square.sticky span[class^="icon"]:before {
+.button.square span[class^="icon"]:before {
   margin: 19px;
   font-size: 22px;
   color: #fff;
