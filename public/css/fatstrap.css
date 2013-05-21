@@ -38,9 +38,6 @@ html {
 .handler#handler-filter:checked ~ #wrapper label[for="handler-filter"] {
   background-color: #1f7f5c;
 }
-.handler#handler-filter:checked ~ #wrapper label[for="handler-combo"] {
-  pointer-events: none;
-}
 .handler#handler-filter:checked ~ #wrapper div.filter-menu {
   visibility: visible;
 }
@@ -50,9 +47,6 @@ html {
 }
 .handler#handler-combo:checked ~ #wrapper label[for="handler-combo"] {
   background-color: #1f7f5c;
-}
-.handler#handler-combo:checked ~ #wrapper label[for="handler-filter"] {
-  pointer-events: none;
 }
 .handler#handler-combo:checked ~ #wrapper ul.combo-box {
   visibility: visible;
@@ -186,8 +180,11 @@ ul.combo-box li:hover {
   background-color: #1f7f5c;
 }
 ul.combo-box.accordion .collapse > div {
-  min-height: 150px;
+  height: 150px;
   background-color: #ffffff;
+  color: #232323;
+  padding: 10px;
+  overflow: auto;
 }
 @font-face {
   font-family: 'fontello';
@@ -530,7 +527,7 @@ ul.list.background-enabled li span[class^="icon-angle"] {
   position: relative;
   z-index: 3;
 }
-.header p {
+.header p.title {
   text-transform: uppercase;
   text-align: center;
   padding: 19px;
